@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwapMyCraving — Smart Food Swaps That Actually Satisfy</title>
+    <meta name="description" content="Craving junk food but trying to stay on track? SwapMyCraving finds healthier alternatives that satisfy your craving without wrecking your goals.">
+    <link rel="canonical" href="https://swapmycraving.com/">
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        :root {
+            --primary: #e85d04;
+            --primary-dark: #b84800;
+            --bg: #fffbf5;
+            --text: #2b2b2b;
+            --text-soft: #6b6b6b;
+            --border: #f0e6d2;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .container { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+        header { padding: 16px 0; border-bottom: 1px solid var(--border); background: #fff; }
+        header .container { display: flex; align-items: center; justify-content: space-between; }
+        .logo { font-weight: 700; font-size: 18px; color: var(--text); text-decoration: none; }
+        .logo span { color: var(--primary); }
+
+        .hero { padding: 80px 0 60px; text-align: center; }
+        h1 { font-size: 48px; font-weight: 800; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 20px; }
+        .hero p { font-size: 19px; color: var(--text-soft); max-width: 580px; margin: 0 auto 32px; }
+        .cta {
+            display: inline-block;
+            background: var(--primary);
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            transition: background 0.2s;
+        }
+        .cta:hover { background: var(--primary-dark); }
+
+        .featured { padding: 40px 0; }
+        h2 { font-size: 28px; font-weight: 800; margin-bottom: 24px; letter-spacing: -0.01em; text-align: center; }
+        .craving-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+        @media (max-width: 700px) { .craving-grid { grid-template-columns: 1fr 1fr; } }
+        .craving-card {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px 18px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text);
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+        .craving-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,93,4,0.12); }
+        .craving-card.live { border-color: var(--primary); }
+        .craving-card .emoji { font-size: 36px; margin-bottom: 8px; }
+        .craving-card .name { font-weight: 700; font-size: 16px; }
+        .craving-card .status { font-size: 12px; color: var(--text-soft); margin-top: 4px; }
+        .craving-card.live .status { color: var(--primary); font-weight: 600; }
+
+        footer { padding: 60px 0; text-align: center; color: var(--text-soft); font-size: 14px; border-top: 1px solid var(--border); margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <a href="/" class="logo">Swap<span>My</span>Craving</a>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero">
+        <h1>Crave smart. Eat smarter.</h1>
+        <p>Find healthier swaps for your favorite junk food cravings — with real macros, calorie counts, and quick recipes. No login. No app. Just answers in 30 seconds.</p>
+        <a href="/healthy-pizza-alternatives/" class="cta">Try It With Pizza →</a>
+    </section>
+
+    <section class="featured">
+        <h2>What are you craving?</h2>
+        <div class="craving-grid">
+            <a href="/healthy-pizza-alternatives/" class="craving-card live">
+                <div class="emoji">🍕</div>
+                <div class="name">Pizza</div>
+                <div class="status">Live now →</div>
+            </a>
+            <div class="craving-card">
+                <div class="emoji">🍦</div>
+                <div class="name">Ice Cream</div>
+                <div class="status">Coming soon</div>
+            </div>
+            <div class="craving-card">
+                <div class="emoji">🍔</div>
+                <div class="name">Burger</div>
+                <div class="status">Coming soon</div>
+            </div>
+            <div class="craving-card">
+                <div class="emoji">🍟</div>
+                <div class="name">Fries</div>
+                <div class="status">Coming soon</div>
+            </div>
+            <div class="craving-card">
+                <div class="emoji">🍩</div>
+                <div class="name">Donuts</div>
+                <div class="status">Coming soon</div>
+            </div>
+            <div class="craving-card">
+                <div class="emoji">🍫</div>
+                <div class="name">Chocolate</div>
+                <div class="status">Coming soon</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>SwapMyCraving — Smart food swaps for people who want to enjoy food without losing progress.</p>
+    </div>
+</footer>
+
+</body>
+</html>
