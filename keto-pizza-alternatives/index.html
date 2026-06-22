@@ -65,6 +65,22 @@
             "@type": "Answer",
             "text": "Yes — chicken crust pizza is one of the best fat-loss meals on keto because it's protein-dense (22g protein per 200 cal slice). Fathead crust is harder to fit because of the higher calorie density. Set the calculator to 'Lose fat' goal and your actual body weight to see the math."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Is cauliflower crust pizza keto?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Homemade or clean store-bought cauliflower crust (Caulipower, Outer Aisle, Realgood) runs about 6g net carbs per slice — fine for lazy keto and OK for strict keto at one slice. But many restaurant and budget grocery cauliflower crusts use rice flour or tapioca starch as the real base, which pushes them to 15-20g net carbs and breaks ketosis. Always check that cauliflower is the first ingredient."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you order keto pizza at restaurants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Blaze Pizza's keto crust is about 6g net carbs for the whole personal pie — the best chain option. Anywhere else, order a pizza bowl or pizza with no crust: they bake your sauce, cheese, and toppings without the dough for near-zero carbs. Avoid thin crust, stuffed crust, and skinny crusts — they're all still wheat."
+          }
         }
       ]
     }
@@ -250,6 +266,20 @@
         .keto-tag { display: inline-block; background: var(--green); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 10px; margin-left: 6px; vertical-align: middle; letter-spacing: 0.03em; }
         .nonketo-tag { display: inline-block; background: var(--red); color: #fff; font-size: 11px; font-weight: 700; padding: 2px 7px; border-radius: 10px; margin-left: 6px; vertical-align: middle; letter-spacing: 0.03em; }
 
+        .ktable-wrap { overflow-x: auto; margin: 8px 0 4px; -webkit-overflow-scrolling: touch; }
+        table.ktable { width: 100%; border-collapse: collapse; font-size: 14px; min-width: 480px; }
+        table.ktable th, table.ktable td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
+        table.ktable th { font-weight: 700; color: var(--text-soft); font-size: 11px; text-transform: uppercase; letter-spacing: 0.04em; }
+        table.ktable td { font-variant-numeric: tabular-nums; }
+        table.ktable td:first-child { font-weight: 700; white-space: nowrap; }
+        table.ktable tr.k-strict td { background: #f3faf4; }
+        table.ktable tr.k-edge td { background: #fff8ec; }
+        table.ktable tr.k-no td { background: #fdf1f0; color: var(--text-soft); }
+        .table-note { font-size: 12px; color: var(--text-soft); margin-top: 10px; line-height: 1.5; }
+        .verdict-yes { color: var(--green); font-weight: 700; }
+        .verdict-edge { color: var(--amber); font-weight: 700; }
+        .verdict-no { color: var(--red); font-weight: 700; }
+
         .faq details {
             background: var(--card-bg); border: 1px solid var(--border);
             border-radius: 10px; padding: 16px 20px; margin-bottom: 10px;
@@ -416,12 +446,44 @@
 </section>
 
 <section>
+    <h2 class="section-title">Keto Pizza Crust Comparison (Net Carbs Side by Side)</h2>
+    <p>Every crust on this page, sorted by net carbs — so you can see at a glance which fit strict keto, which are edge cases, and which to skip entirely.</p>
+    <div class="ktable-wrap">
+        <table class="ktable">
+            <thead>
+                <tr><th>Crust</th><th>Net carbs*</th><th>Calories</th><th>Protein</th><th>Keto verdict</th></tr>
+            </thead>
+            <tbody>
+                <tr class="k-strict"><td>🐔 Chicken crust</td><td>2g</td><td>200</td><td>22g</td><td class="verdict-yes">✅ Strict keto</td></tr>
+                <tr class="k-strict"><td>🥚 Egg white crust</td><td>4g</td><td>140</td><td>18g</td><td class="verdict-yes">✅ Strict keto</td></tr>
+                <tr class="k-strict"><td>🧀 Fathead crust</td><td>5g</td><td>280</td><td>14g</td><td class="verdict-yes">✅ Strict keto</td></tr>
+                <tr class="k-edge"><td>🥦 Cauliflower crust</td><td>6g</td><td>220</td><td>14g</td><td class="verdict-edge">⚠️ Lazy keto · 1 slice</td></tr>
+                <tr class="k-edge"><td>🫑 Portobello boats</td><td>8g</td><td>150</td><td>10g</td><td class="verdict-edge">⚠️ Lazy keto · edge</td></tr>
+                <tr class="k-no"><td>🌮 Whole-wheat tortilla</td><td>18g</td><td>180</td><td>12g</td><td class="verdict-no">❌ Not keto</td></tr>
+                <tr class="k-no"><td>🥯 Lavash flatbread</td><td>22g</td><td>200</td><td>12g</td><td class="verdict-no">❌ Not keto</td></tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="table-note">*Net carbs = total carbs minus fiber. Most keto crusts carry 1–2g fiber, so these figures are conservative — your real net carbs are usually a touch lower. Per slice, except portobello (per cap) and tortilla/lavash (per whole pizza).</p>
+</section>
+
+<section>
     <h2 class="section-title">How to Pick Your Keto Crust</h2>
     <p><strong>Strict keto (under 20g carbs/day):</strong> Chicken crust, egg white crust, or fathead. Skip cauliflower if you've already had 10g+ carbs earlier in the day.</p>
     <p><strong>Lazy keto (20-50g/day):</strong> Any of the 5 keto-safe options. Cauliflower is the most convenient if you want store-bought.</p>
     <p><strong>Carnivore / zero-carb:</strong> Chicken crust is the only real option — 2g carbs, all from seasoning.</p>
     <p><strong>Cutting (fat loss on keto):</strong> Egg white crust or chicken crust — both stay under 200 cal per slice with high protein, ideal for a deficit.</p>
     <p><strong>Maintenance / bulking on keto:</strong> Fathead crust gives you the calories and fat needed for surplus, with the satisfying "real pizza" texture.</p>
+</section>
+
+<section>
+    <h2 class="section-title">Ordering Keto Pizza Out (Chains & Delivery)</h2>
+    <p>No time to make a crust from scratch? You can still stay in ketosis when ordering out — but most "thin crust" and "skinny" options at chains are still wheat-based and will blow your carb budget in one serving. Here's what actually works:</p>
+    <p>• <strong>Blaze Pizza keto crust</strong> — the best mainstream option, around 6g net carbs for the whole personal pizza. It's flax-based and genuinely keto-friendly. Pile on any meat and cheese toppings freely.</p>
+    <p>• <strong>"No crust" / pizza bowl</strong> — almost any pizzeria will bake your sauce, cheese, and toppings in a dish without the dough. Near-zero carbs, and it works at independent shops and most chains if you just ask. The single most reliable keto move anywhere.</p>
+    <p>• <strong>Cauliflower crust at chains</strong> (some Papa Murphy's and regional spots) — only if you confirm the ingredients. Many chain cauliflower crusts add rice flour or tapioca as the real base, pushing them to 15–20g net carbs. Ask first, or skip.</p>
+    <p>• <strong>Skip entirely:</strong> stuffed crust, regular and thin wheat crust, "skinny" crusts, garlic knots, and breadsticks — all wheat, all over budget in a single serving.</p>
+    <p>When in doubt, remember the toppings are always keto — it's only ever the crust that breaks ketosis. Order a normal pizza, eat the cheese and toppings, leave the crust behind. Not elegant, but it keeps you in.</p>
 </section>
 
 <section class="faq">
@@ -455,6 +517,16 @@
     <details>
         <summary>Can I have keto pizza on a fat-loss cut?</summary>
         <p>Yes — chicken crust pizza is one of the best fat-loss meals on keto because it's protein-dense (22g protein per 200 cal slice). Egg white crust is similar at 18g protein per 140 cal slice. Fathead crust is harder to fit on a cut because of its calorie density. Set the calculator to "Lose fat" goal and your actual body weight to see the math for your situation.</p>
+    </details>
+
+    <details>
+        <summary>Is cauliflower crust pizza keto?</summary>
+        <p>Homemade or clean store-bought cauliflower crust (Caulipower, Outer Aisle, Realgood) runs about 6g net carbs per slice — fine for lazy keto and OK for strict keto at one slice. But many restaurant and budget grocery cauliflower crusts use rice flour or tapioca starch as the real base, which pushes them to 15–20g net carbs and breaks ketosis. Always check that cauliflower is the first ingredient.</p>
+    </details>
+
+    <details>
+        <summary>Can you order keto pizza at restaurants?</summary>
+        <p>Yes. Blaze Pizza's keto crust is about 6g net carbs for the whole personal pie — the best chain option. Anywhere else, order a "pizza bowl" or pizza with no crust: they bake your sauce, cheese, and toppings without the dough for near-zero carbs. Avoid thin crust, stuffed crust, and "skinny" crusts — they're all still wheat.</p>
     </details>
 </section>
 
