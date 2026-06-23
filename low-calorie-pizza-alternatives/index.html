@@ -200,6 +200,28 @@
         .table-note { font-size: 12px; color: var(--text-soft); margin-top: 10px; line-height: 1.5; }
         .save { color: var(--green); font-weight: 700; }
 
+        .craving-match { font-size: 13.5px; margin-top: 8px; color: var(--text-soft); background: #f6f7f6; border-radius: 6px; padding: 7px 10px; }
+        .craving-match strong { color: var(--primary-dark); }
+
+        .buy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 18px 0 8px; }
+        @media (max-width: 600px) { .buy-grid { grid-template-columns: 1fr; } }
+        .buy-card { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 18px; box-shadow: var(--shadow); display: flex; flex-direction: column; }
+        .buy-card .b-name { font-weight: 800; font-size: 16px; }
+        .buy-card .b-meta { font-size: 13px; color: var(--text-soft); margin: 4px 0 8px; font-weight: 600; }
+        .buy-card .b-note { font-size: 14px; flex: 1; margin-bottom: 12px; }
+        .buy-btn { display: inline-block; text-align: center; background: var(--primary); color: #fff; text-decoration: none; font-weight: 700; font-size: 14px; padding: 10px 14px; border-radius: 8px; transition: background .2s; }
+        .buy-btn:hover { background: var(--primary-dark); }
+        .disclosure { font-size: 12px; color: var(--text-soft); font-style: italic; margin-top: 12px; }
+
+        .recipe { background: var(--card-bg); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); margin: 18px 0; }
+        .recipe-img { width: 100%; display: block; }
+        .recipe-body { padding: 20px 22px; }
+        .recipe h3 { font-size: 19px; margin: 0 0 4px; }
+        .recipe .r-meta { font-size: 13px; color: var(--text-soft); font-weight: 600; margin-bottom: 12px; }
+        .recipe ol, .recipe ul.ing { margin: 0 0 12px 20px; }
+        .recipe li { margin-bottom: 6px; font-size: 15px; }
+        .recipe .r-label { font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--text-soft); margin: 14px 0 6px; }
+
         .faq details { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; padding: 16px 20px; margin-bottom: 10px; }
         .faq summary { font-weight: 700; cursor: pointer; font-size: 16px; list-style: none; }
         .faq summary::-webkit-details-marker { display: none; }
@@ -300,31 +322,37 @@
 
 <section>
     <h2 class="section-title">The Lowest-Calorie Swaps (Ranked)</h2>
+    <p>How light it is matters — but so does whether it actually scratches the itch. Each swap gets an honest <strong>craving-match score</strong>: our editorial take on how close it really feels to pizza (not a lab test). A low-calorie food that doesn't satisfy just sends you back to the fridge.</p>
     <ul class="more-list">
         <li>
             <div class="name">🥚 Egg White Crust Pizza <span class="low-tag">LOWEST CAL ✓</span></div>
             <div class="stats">140 cal · 18g protein · 4g carbs · 4g fat (per slice)</div>
             <div class="desc"><strong>The calorie champion.</strong> Egg whites whipped with a little parmesan, baked into a thin crust. At 140 calories you can have two slices for less than one regular slice, and you still get 36g of protein. Texture is omelette-like rather than bready — best for people who care more about the macros than the exact mouthfeel.</div>
+            <div class="craving-match">🎯 Craving match: <strong>5/10</strong> — the melty-cheese, savory-sauce part lands, but the eggy base never reads as "crust." Satisfies the topping craving, not the dough one.</div>
         </li>
         <li>
             <div class="name">🍄 Portobello Pizza Boats <span class="low-tag">LOWEST CAL ✓</span></div>
             <div class="stats">150 cal · 10g protein · 8g carbs · 8g fat (per cap)</div>
             <div class="desc"><strong>Best for volume eating.</strong> A big mushroom cap as the base, filled with sauce, cheese, and toppings. The cap is mostly water and fiber, so you get a large, genuinely filling portion for ~150 calories. Naturally gluten-free and great when you want to <em>feel</em> full, not just hit a number.</div>
+            <div class="craving-match">🎯 Craving match: <strong>5/10</strong> — tastes great and fills you up, but it's honestly a loaded mushroom, not pizza. Best when you want volume and don't need the bread feel.</div>
         </li>
         <li>
             <div class="name">🫑 Bell Pepper Pizza Boats <span class="low-tag">LOWEST CAL ✓</span></div>
             <div class="stats">150 cal · 10g protein · 7g carbs · 8g fat (per boat)</div>
             <div class="desc"><strong>The sweet, crunchy option.</strong> Halved bell peppers loaded with sauce and cheese. Similar calorie math to portobello with a sweeter flavor and more crunch. Adds a serving of vegetables to your day almost for free.</div>
+            <div class="craving-match">🎯 Craving match: <strong>4/10</strong> — the furthest from real pizza. Tasty and ultra-light, but the sweet crunch is its own thing. Pick it for the calories, not the nostalgia.</div>
         </li>
         <li>
             <div class="name">🐔 Chicken Crust Pizza <span class="low-tag">HIGH PROTEIN ✓</span></div>
             <div class="stats">200 cal · 22g protein · 2g carbs · 11g fat (per slice)</div>
             <div class="desc"><strong>The most filling per calorie.</strong> Crust made from seasoned ground chicken pressed flat and baked. At 22g protein for 200 calories, it's the most satiating choice here — protein keeps you full longest, so it's ideal if a deficit leaves you hungry. Meaty rather than bread-like.</div>
+            <div class="craving-match">🎯 Craving match: <strong>7/10</strong> — cheese, sauce, and crisp edges genuinely deliver the pizza experience; the only tell is the meaty crust instead of dough. Best all-rounder for actually feeling satisfied.</div>
         </li>
         <li>
             <div class="name">🥦 Cauliflower Crust Pizza <span class="low-tag">MODERATE</span></div>
             <div class="stats">220 cal · 14g protein · 6g carbs · 16g fat (per slice)</div>
-            <div class="desc"><strong>The most "normal" tasting.</strong> Widely available pre-made (Caulipower, Outer Aisle, Realgood) and the closest to regular pizza for convenience. Still saves ~25% of the calories of a regular slice, but watch the cheese-heavy recipes that push it higher.</div>
+            <div class="desc"><strong>The most "normal" tasting.</strong> Widely available pre-made (Caulipower, Outer Aisle, Real Good Foods) and the closest to regular pizza for convenience. Still saves ~25% of the calories of a regular slice, but watch the cheese-heavy recipes that push it higher.</div>
+            <div class="craving-match">🎯 Craving match: <strong>7/10</strong> — looks and bites the most like real pizza, and a good store-bought one is convincing. Slightly softer crust and a faint veg note are the only giveaways.</div>
         </li>
     </ul>
 </section>
@@ -350,6 +378,80 @@
         </table>
     </div>
     <p class="table-note">Calories are realistic averages and vary by recipe and brand. Per slice, except portobello (per cap), bell pepper (per boat), and tortilla (per whole pizza). Fathead is included for contrast — it's keto-friendly but <strong>not</strong> a low-calorie choice.</p>
+</section>
+
+<section>
+    <h2 class="section-title">Buy It: Ready-Made Low-Calorie Pizzas Worth Keeping in the Freezer</h2>
+    <p>No time to cook? These are real store-bought brands that genuinely come in light — not "diet" in name only. Calorie figures are approximate per each brand's current listing; labels change, so confirm on the box.</p>
+    <div class="buy-grid">
+        <div class="buy-card">
+            <div class="b-name">Outer Aisle Cauliflower Crust</div>
+            <div class="b-meta">~50–60 cal per crust · cauliflower + egg, no flour</div>
+            <div class="b-note">The lightest base you can buy — basically cauliflower and egg. Top it yourself and a whole personal pizza can land near 250 cal. Best for the lowest possible calorie ceiling.</div>
+            <a class="buy-btn" href="https://www.amazon.com/s?k=outer+aisle+cauliflower+crust" rel="nofollow sponsored" target="_blank">Find it →</a>
+        </div>
+        <div class="buy-card">
+            <div class="b-name">Real Good Foods Chicken-Crust Pizza</div>
+            <div class="b-meta">~590 cal whole pizza · ~30g protein · grain-free</div>
+            <div class="b-note">A full personal pizza on a chicken crust — high protein and genuinely filling. The whole thing is fewer calories than two regular slices. Best for staying full on a deficit.</div>
+            <a class="buy-btn" href="https://www.amazon.com/s?k=real+good+foods+pizza" rel="nofollow sponsored" target="_blank">Find it →</a>
+        </div>
+        <div class="buy-card">
+            <div class="b-name">CAULIPOWER Cauliflower Pizza</div>
+            <div class="b-meta">~320–340 cal per pizza · widely stocked</div>
+            <div class="b-note">The most available and most "normal-tasting" cauliflower pizza in regular grocery stores. A solid everyday swap that still saves a big chunk of calories. Best for convenience.</div>
+            <a class="buy-btn" href="https://www.amazon.com/s?k=caulipower+cauliflower+pizza" rel="nofollow sponsored" target="_blank">Find it →</a>
+        </div>
+        <div class="buy-card">
+            <div class="b-name">Quest Thin Crust Protein Pizza</div>
+            <div class="b-meta">~470 cal whole pizza · 30g+ protein · low net carb</div>
+            <div class="b-note">A touch higher in calories than the others, but very high protein with a crust that's closer to real pizza dough. Best when you want it to actually taste like pizza.</div>
+            <a class="buy-btn" href="https://www.amazon.com/s?k=quest+thin+crust+pizza" rel="nofollow sponsored" target="_blank">Find it →</a>
+        </div>
+    </div>
+    <p class="disclosure">The “Find it” links are affiliate links — if you buy through one, we may earn a small commission at no extra cost to you. We only list products we'd actually recommend as low-calorie swaps.</p>
+</section>
+
+<section>
+    <h2 class="section-title">Make It: 5-Minute Tortilla Pizza</h2>
+    <p>The fastest swap that genuinely feels like pizza — crispy edges, melted cheese, real toppings — for around 260 calories. No cooking skill required.</p>
+    <div class="recipe">
+        <svg class="recipe-img" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a tortilla pizza topped with pepperoni and basil">
+            <rect width="600" height="200" fill="#fff5e8"/>
+            <circle cx="300" cy="100" r="84" fill="#e6a85b"/>
+            <circle cx="300" cy="100" r="70" fill="#d6502b"/>
+            <circle cx="300" cy="100" r="64" fill="#f4d24f"/>
+            <circle cx="272" cy="80" r="11" fill="#b5341f"/>
+            <circle cx="324" cy="92" r="11" fill="#b5341f"/>
+            <circle cx="288" cy="124" r="11" fill="#b5341f"/>
+            <circle cx="332" cy="128" r="10" fill="#b5341f"/>
+            <circle cx="256" cy="112" r="9" fill="#b5341f"/>
+            <circle cx="310" cy="66" r="6" fill="#2d8a3e"/>
+            <circle cx="252" cy="92" r="5" fill="#2d8a3e"/>
+            <circle cx="320" cy="118" r="5" fill="#2d8a3e"/>
+            <circle cx="282" cy="100" r="5" fill="#2d8a3e"/>
+        </svg>
+        <div class="recipe-body">
+            <h3>5-Minute Tortilla Pizza — ~260 cal · 22g protein</h3>
+            <div class="r-meta">Serves 1 · 5 minutes · air fryer, oven, or skillet</div>
+            <div class="r-label">You need</div>
+            <ul class="ing">
+                <li>1 low-carb high-fiber tortilla (~70 cal)</li>
+                <li>2 tbsp marinara or pizza sauce</li>
+                <li>⅓ cup part-skim shredded mozzarella</li>
+                <li>Turkey pepperoni or pre-cooked grilled chicken (optional)</li>
+                <li>Pinch of Italian seasoning + chili flakes</li>
+            </ul>
+            <div class="r-label">Do this</div>
+            <ol>
+                <li>Lay the tortilla flat and spread the sauce thin, right to the edge.</li>
+                <li>Scatter the mozzarella, then the pepperoni or chicken and the seasoning.</li>
+                <li>Air-fryer 5 min at 350°F · or oven 6–7 min at 400°F · or skillet on medium with a lid, 4–5 min — until the cheese melts and the edge crisps.</li>
+                <li>Slice and eat. Crispy, cheesy, done — for about 260 calories.</li>
+            </ol>
+            <p style="font-size:14px; color:var(--text-soft); margin:0;"><strong>Honest take (craving match 8/10):</strong> this is the closest "feels like real pizza" swap you can make in five minutes. Swap the tortilla for an Outer Aisle crust to drop another ~40 calories.</p>
+        </div>
+    </div>
 </section>
 
 <section>
